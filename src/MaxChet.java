@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Example {
+class MaxChet {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();

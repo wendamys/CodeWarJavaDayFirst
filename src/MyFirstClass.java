@@ -1,8 +1,6 @@
 import java.util.Scanner;
 
-// test commit2
-
-class MyProgram {
+public class MyFirstClass {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int x = sc.nextInt();
