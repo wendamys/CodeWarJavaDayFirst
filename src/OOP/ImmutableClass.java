@@ -1,6 +1,13 @@
 import java.util.ArrayList;
 import java.util.List;
 
+// input -> ImmutableClass("Stepan", 25, 25600.3, [Ivan 25, Tanya 30])
+// output -> Stepan 25 На счете 25600.3
+// output -> Студенты:
+// output ->  -Ivan
+// output ->  -Tanya
+
+
 class Student {
     private String name;
     private int age;
@@ -79,7 +86,6 @@ public final class ImmutableClass {
             System.out.println(" -" + s.getName());
         }
     }
-
  }
 
 

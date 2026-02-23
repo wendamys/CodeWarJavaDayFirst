@@ -5,8 +5,6 @@
  * @version 1.0
  */
 
-
-
 public class HelloWorld {
     /**
      * Program entry point

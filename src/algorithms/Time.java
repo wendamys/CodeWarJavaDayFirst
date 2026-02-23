@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-// test imput -> 44000
+// test input -> 44000
 // output -> 12:13:20
 
 class Time {
