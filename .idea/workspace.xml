@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3e67db6-9079-467e-b36e-79a60f5d3e9f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OOP/ImmutableClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP/ImmutableClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/algorithms/FirstName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/FirstName.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/algorithms/Ladder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/Ladder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/algorithms/MassiveEven.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/MassiveEven.java" afterDir="false" />

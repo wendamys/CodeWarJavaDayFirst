@@ -1,12 +1,11 @@
 import java.util.ArrayList;
 import java.util.List;
 
-// input -> ImmutableClass("Stepan", 25, 25600.3, [Ivan 25, Tanya 30])
-// output -> Stepan 25 На счете 25600.3
+// input -> ImmutableClass("Liza", 30, 43600.30, [Ivan 25, Tanya 30])
+// output -> Liza 30 На счете 43600.3
 // output -> Студенты:
 // output ->  -Ivan
 // output ->  -Tanya
-
 
 class Student {
     private String name;
@@ -17,31 +16,17 @@ class Student {
         this.age = age;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
+    public void setName(String name) { this.name = name; }
+    public void setAge(int age) { this.age = age; }
+    public String getName() { return name; }
+    public int getAge() { return age; }
 }
-
 
 public final class ImmutableClass {
     private final String name;
     private final int age;
     private final double money;
     private final List<Student> students;
-
 
     public ImmutableClass(String name, int age, double money, List<Student> students) {
         this.name = name;
@@ -52,42 +37,28 @@ public final class ImmutableClass {
 
     private List<Student> deepCopy(List<Student> original) {
         List<Student> copy = new ArrayList<>();
-        for (Student s: original) {
+        for (Student s : original) {
             copy.add(new Student(s.getName(), s.getAge()));
         }
         return copy;
     }
 
-    public List<Student> getStudents() {
-        return deepCopy(students);
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public double getMoney() {
-        return money;
-    }
+    public List<Student> getStudents() { return deepCopy(students); }
+    public String getName() { return name; }
+    public int getAge() { return age; }
+    public double getMoney() { return money; }
 
     public static void main(String[] args) {
         List<Student> studentList = new ArrayList<>();
-        studentList.add(new Student("Ivan" , 25));
+        studentList.add(new Student("Ivan", 25));
         studentList.add(new Student("Tanya", 30));
-        ImmutableClass Stepan = new ImmutableClass("Stepan", 25, 25600.30, studentList);
-        System.out.println(Stepan.getName() + " " + Stepan.getAge() + " На счете " + Stepan.getMoney());
 
+        ImmutableClass liza = new ImmutableClass("Liza", 30, 43600.30, studentList);
+
+        System.out.println(liza.getName() + " " + liza.getAge() + " На счете " + liza.getMoney());
         System.out.println("Студенты:");
-        for (Student s: Stepan.getStudents()) {
+        for (Student s : liza.getStudents()) {
             System.out.println(" -" + s.getName());
         }
     }
- }
-
-
-
-
+}
